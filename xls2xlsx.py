@@ -37,7 +37,6 @@ def read_xlsx(filename):
 convert_xls_to_xlsx('L070n087_SET_Export.xls', 'L070n087_SET_Export.xlsx')
 
 # Convert the second .xls file
-convert_xls_to_xlsx('L070n087_EDE.xls', 'L070n087_EDE.xlsx')
 
 # Read the converted .xlsx files
 read_xlsx('L070n087_SET_Export.xlsx')
