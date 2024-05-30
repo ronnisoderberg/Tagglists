@@ -1,7 +1,7 @@
 import xlrd
 from openpyxl import Workbook, load_workbook
 
-def convert_xls_to_xlsx(xls_filename, xlsx_filename):
+def convertXlsToXlsx(xls_filename, xlsx_filename):
     # Open the .xls file
     xls_workbook = xlrd.open_workbook(xls_filename)
     
@@ -34,10 +34,10 @@ def read_xlsx(filename):
         print(f"Content of the first cell in sheet {sheet.title}: {sheet['A1'].value}")
 
 # Convert the first .xls file
-convert_xls_to_xlsx('L070n087_SET_Export.xls', 'L070n087_SET_Export.xlsx')
+# convertXlsToXlsx('L070n087_SET_Export.xls', 'L070n087_SET_Export.xlsx')
 
-# Convert the second .xls file
+# # Convert the second .xls file
 
-# Read the converted .xlsx files
-read_xlsx('L070n087_SET_Export.xlsx')
-read_xlsx('L070n087_EDE.xlsx')
+# # Read the converted .xlsx files
+# read_xlsx('L070n087_SET_Export.xlsx')
+# read_xlsx('L070n087_EDE.xlsx')
