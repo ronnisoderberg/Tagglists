@@ -4,6 +4,13 @@ Målbilden ex
 | AS202_142_GTU_PV  | REAL |  003_AS202-122_DUC88_| S2(V) |  -40 |  110 |  -40 | 110  |  °C | ###.#EU  |  Utetemperatur |
 |---|---|---|---|---|---|---|---|---|---|---|
 
+
+- [ ] Skriv ut vad alla kolumnerna är och vad dom tar sin data ifrån. 
+- [ ] Lista all funktionalitet som ska finnas.
+
+
+## Detta gäller hämtning och hatering av data från saia DUC
+## Detta gäller hämtning och hatering av data från trend DUC
 ##### A Kolumen
 Är namnet på komponenten som kommer från "object-name" i EDE C8 och neråt
 
@@ -202,3 +209,6 @@ Detta gäller bara knobs och sensorer. Dom ska plocka sin enhetsbeteckningar fr�
 - Om värdet i cell M2 är "Nm", returnera "#####EU".
 - Om värdet i cell M2 är "A", returnera "####,#EU".
 - Om värdet i cell M2 är "kWh", returnera "#####EU".
+
+#### K Kolumn
+"description" hämtar den allt som finns i F8 cellen i EDE filen. 
