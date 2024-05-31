@@ -1,0 +1,520 @@
+﻿SYMBOLNAME;TYPE;ADDRESS;COMMENT;SCOPE;TAGS
+COB_0;COB;;;Local;
+MODBUS.CLR;F;;Nollställer alla errors på modbus f-boxar;Public;
+RUM.COM_ERR;F;115;Kommunikationsfel Elvaco;Public;
+RUM.MAX.PV;R;143;Högsta rumstemperatur av valda rum;Public;Tilluftstemperatur
+RUM.MIN.PV;R;144;Lägsta rumstemperatur av valda rum;Public;Tilluftstemperatur
+IO.DigitalInput0;F;S.IO.DigitalInput + 0;Digital input 0;External;S_IO
+IO.DigitalInput1;F;S.IO.DigitalInput + 1;Digital input 1;External;S_IO
+IO.DigitalInput2;F;S.IO.DigitalInput + 2;Digital input 2;External;S_IO
+IO.DigitalInput3;F;S.IO.DigitalInput + 3;Digital input 3;External;S_IO
+IO.Slot0.AnalogueInput0;R;S.IO.Slot0.AnalogueInput + 0;Analogue input 0;External;S_IO
+IO.Slot0.AnalogueInput1;R;S.IO.Slot0.AnalogueInput + 1;Analogue input 1;External;S_IO
+IO.Slot0.AnalogueInput2;R;S.IO.Slot0.AnalogueInput + 2;Analogue input 2;External;S_IO
+IO.Slot0.AnalogueInput4;R;S.IO.Slot0.AnalogueInput + 4;Analogue input 4;External;S_IO
+IO.Slot0.AnalogueInput5;R;S.IO.Slot0.AnalogueInput + 5;Analogue input 5;External;S_IO
+IO.Slot0.AnalogueInput6;R;S.IO.Slot0.AnalogueInput + 6;Analogue input 6;External;S_IO
+IO.Slot0.AnalogueInput7;R;S.IO.Slot0.AnalogueInput + 7;Analogue input 7;External;S_IO
+IO.Slot0.AnalogueInput3;R;S.IO.Slot0.AnalogueInput + 3;Analogue input 3;External;S_IO
+VS01.GT10.PV;R;227;Framledningstempteratur;Public;VP_VS_temperatur
+VS01.GT10.FAULT;F;198;VS01-GT10 - Givarfel;Public;Givarfel_LF
+VS01.GT10.Y6;R;240;Ute 6 / Framledning 6;Public;VP_VS_temperatur
+VS01.GT10.X1;R;228;Ute 1 / Framledning 1;Public;Utetemperatur
+VS01.GT10.Y7;R;241;Ute 7 / Framledning 7;Public;VP_VS_temperatur
+VS01.GT10.Y4;R;238;Ute 4 / Framledning 4;Public;VP_VS_temperatur
+VS01.GT10.Y2;R;236;Ute 2 / Framledning 2;Public;VP_VS_temperatur
+VS01.GT10.AL;F;197;VS01-GT10 - Avvikelse Temperatur;Public;Larmgrupp_41
+VS01.GT10.X6;R;233;Ute 6 / Framledning 6;Public;Utetemperatur
+VS01.GT10.CSP;R;223;Beräknat Börvärde;Public;VP_VS_temperatur
+VS01.GT10.CSP1;R;222;Beräknat Börvärde Kurva;Public;VP_VS_temperatur
+VS01.GT10.X4;R;231;Ute 4 / Framledning 4;Public;Utetemperatur
+VS01.GT10.X2;R;229;Ute 2 / Framledning 2;Public;Utetemperatur
+VS01.GT10.ADL;R;220;Larmgräns Avvikelselarm (+/-);Public;VP_VS_temperatur
+VS01.GT10.X3;R;230;Ute 3 / Framledning 3;Public;Utetemperatur
+VS01.GT10.Y3;R;237;Ute 3 / Framledning 3;Public;VP_VS_temperatur
+VS01.GT10.X5;R;232;Ute 5 / Framledning 5;Public;Utetemperatur
+VS01.GT10.Y1;R;235;Ute 1 / Framledning 1;Public;VP_VS_temperatur
+VS01.GT10.X7;R;234;Ute 7 / Framledning 7;Public;Utetemperatur
+VS01.GT10.AD;R;221;Larmfördröjning;Public;Minuter
+VS01.GT10.Y5;R;239;Ute 5 / Framledning 5;Public;VP_VS_temperatur
+VS01.GT10.P1;R;226;P-Band;Public;P_Band_Temperatur
+VS01.GT10.I1;R;225;I-Tid;Public;I_Tid_D_Tid
+VS01.GT10.D1;R;224;D-tid;Public;I_Tid_D_Tid
+VS01.SV20.OP;R;306;Utsignal;Public;Utsignal_Analog
+VS01.SV20.AL4;F;216;VS01-SV20 - Utgång I Handläge;Public;Larmgrupp_51
+VS01.SV20.MS;F;218;Manuell Styrning;Public;
+VS01.SV20.DV;F;217;;Public;
+VS01.SV20.OPM;R;305;Manuell Styrning;Public;Utsignal_Analog
+VS01.P1.MS;F;213;Manuell Styrning;Public;
+VS01.P1.AL4;F;207;VS01-P1 - Utgång I Handläge;Public;Larmgrupp_41
+VS01.P1.DI_V;F;210;Driftindikering;Public;
+VS01.P1.CMD;F;209;Manöver;Public;
+VS01.P1.SB.DI;F;215;Indikering säkerhetsbrytare;Public;
+VS01.P1.SB.AD;R;296;Larmfördröjning;Public;Minuter
+VS01.P1.SB.AL;F;214;VS01-P1-SB Säkerhetsbrytare Fel Läge;Public;Larmgrupp_41
+VS01.P1.SP1;R;297;Startgräns Ute <;Public;Utetemperatur
+VS01.P1.SP2;R;298;Stoppgräns Ute >;Public;Utetemperatur
+VS01.P1.SP4;R;300;Ventilöppning Pumpstart;Public;Utsignal_Analog
+VS01.P1.SP5;R;301;Ventilöppning Pumpstopp;Public;Utsignal_Analog
+VS01.P1.SP8;R;304;Frånslagsfördröjning Ventilöppning;Public;Minuter
+VS01.P1.SP3;R;299;Direktstart: Utetemp <;Public;Utetemperatur
+VS01.P1.SP6;R;302;Tillslagsfördröjning Motion;Public;Timmar
+VS01.P1.SP7;R;303;Motionstid;Public;Minuter
+VS01.P1.AD;R;293;Larmfördröjning;Public;Sekunder
+VS01.P1.PV2;R;295;Antal starter;Public;Antal_OnOff
+VS01.P1.PV1;R;294;Drifttid;Public;Timmar
+VS01.P1.MCMD;F;212;Manuell Styrning;Public;
+VS01.P1.INT_DV;F;211;Motion Aktiv;Public;
+VS01.P1.AL;F;208;VS01-P1 - Driftfel;Public;Larmgrupp_11
+VS01.GT30.PV;R;244;Utetemperatur;Public;Utetemperatur
+VS01.GT30.FAULT;F;200;VS01-GT30 - Givarfel;Public;Givarfel_LF
+VS01.GT30.MCMD;F;201;Manuell Styrning;Public;
+VS01.GT30.OPM;R;243;Manuellt Värde;Public;Utetemperatur
+VS01.GT30.AD;R;242;Larmfördröjning;Public;Minuter
+VS01.GT30.AL;F;199;VS01-GT30 - Utetemperatur I Manuellt Läge;Public;Larmgrupp_41
+VS01.GP60.PV;R;219;Tryck Expansionskärl;Public;Tryck_Exp
+VS01.GP60.FAULT;F;194;VS01-GP60 - Givarfel;Public;Givarfel_LF
+VS01.GP60.LLAD;R;218;Larmfördröjning LågLåglarm;Public;Minuter
+VS01.GP60.LAD;R;217;Larmfördröjning Låglarm;Public;Minuter
+VS01.GP60.LAL;F;195;VS01-GP60 - Låglarm;Public;Larmgrupp_41
+VS01.GP60.ALL;R;216;Larmgräns Lågt Tryck;Public;Tryck_Exp
+VS01.GP60.LLAL;F;196;VS01-GP60 - LågLåglarm;Public;Larmgrupp_41
+VS01.GP60.ALLL;R;215;Larmgräns LågLågt Tryck;Public;Tryck_Exp
+VS01.OPT.UTETEMP.PV3;R;291;Styrande Utetemp;Public;Utetemperatur
+VS01.OPT.UTETEMP.PV1;R;289;Genomsnittlig Utetemperatur Senaste 24 Timmarna;Public;Utetemperatur
+VS01.OPT.UTETEMP.PV2;R;290;Högsta Värde Av Genomsnittlig Utetemperatur Och Aktuell Utetemperatur;Public;Utetemperatur
+VS01.OPT.UTETEMP.MCMD;F;206;Aktivera Reglering På Dämpad Utetemp;Public;
+VS01.OPT.UTETEMP.SP1;R;292;Antal timmar medelvärde;Public;Timmar
+VS01.OPT.RUM.CSP;R;246;Aktuell Rumspåverkan;Public;Utetemperatur
+VS01.OPT.RUM.DV;F;203;Rumsoptimering aktiv;Public;
+VS01.OPT.RUM.SP5;R;259;Min framledning vid avdrag;Public;VP_VS_temperatur
+VS01.OPT.RUM.INT_PV3;R;251;Antal rumsgivare att dra av;Public;
+VS01.OPT.RUM.INT_PV1;R;249;Totalt antal valda rumsgivare;Public;
+VS01.OPT.RUM.INT_PV2;R;250;Antal valda rumsgivare -2 (eller -0 om mindre än 3 rum valda);Public;
+VS01.OPT.RUM.PV;R;254;Medelvärde Rumstemperatur;Public;Tilluftstemperatur
+VS01.OPT.RUM.INT_PV5;R;252;Sammanlagd rumstemperatur före medelberäkning;Public;
+VS01.OPT.RUM.MCMD;F;204;Aktivering Rumspåverkan;Public;
+VS01.OPT.RUM.SP2;R;256;Börvärde Natt;Public;Tilluftstemperatur
+VS01.OPT.RUM.D1;R;247;D-tid;Public;I_Tid_D_Tid
+VS01.OPT.RUM.P1;R;253;P-Band;Public;P_Band_Temperatur
+VS01.OPT.RUM.SP4;R;258;Max tillägg;Public;Utetemperatur
+VS01.OPT.RUM.SP1;R;255;Börvärde Dag;Public;Tilluftstemperatur
+VS01.OPT.RUM.I1;R;248;I-tid;Public;I_Tid_D_Tid
+VS01.OPT.RUM.SP3;R;257;Max avdrag;Public;Utetemperatur
+VS01.OPT.TK.CF7;R;267;Dagdrift Söndag  1;Public;Tidkanal
+VS01.OPT.TK.CF4;R;264;Dagdrift Torsdag  1;Public;Tidkanal
+VS01.OPT.TK.CF1;R;261;Dagdrift Måndag  1;Public;Tidkanal
+VS01.OPT.TK.CT16;R;287;Dagdrift Lördag  2;Public;Tidkanal
+VS01.OPT.TK.CF13;R;270;Dagdrift Onsdag  2;Public;Tidkanal
+VS01.OPT.TK.CT6;R;280;Dagdrift Lördag  1;Public;Tidkanal
+VS01.OPT.TK.CT5;R;279;Dagdrift Fredag  1;Public;Tidkanal
+VS01.OPT.TK.CF3;R;263;Dagdrift Onsdag  1;Public;Tidkanal
+VS01.OPT.TK.CF11;R;268;Dagdrift Måndag  2;Public;Tidkanal
+VS01.OPT.TK.CT15;R;286;Dagdrift Fredag  2;Public;Tidkanal
+VS01.OPT.TK.CT12;R;283;Dagdrift Tisdag  2;Public;Tidkanal
+VS01.OPT.TK.CT3;R;277;Dagdrift Onsdag  1;Public;Tidkanal
+VS01.OPT.TK.CT2;R;276;Dagdrift Tisdag  1;Public;Tidkanal
+VS01.OPT.TK.CF17;R;274;Dagdrift Söndag  2;Public;Tidkanal
+VS01.OPT.TK.CT17;R;288;Dagdrift Söndag  2;Public;Tidkanal
+VS01.OPT.TK.CF6;R;266;Dagdrift Lördag  1;Public;Tidkanal
+VS01.OPT.TK.CF15;R;272;Dagdrift Fredag  2;Public;Tidkanal
+VS01.OPT.TK.CT14;R;285;Dagdrift Torsdag  2;Public;Tidkanal
+VS01.OPT.TK.CT7;R;281;Dagdrift Söndag  1;Public;Tidkanal
+VS01.OPT.TK.CF2;R;262;Dagdrift Tisdag  1;Public;Tidkanal
+VS01.OPT.TK.CF16;R;273;Dagdrift Lördag  2;Public;Tidkanal
+VS01.OPT.TK.CF12;R;269;Dagdrift Tisdag  2;Public;Tidkanal
+VS01.OPT.TK.DI_V;F;205;Dagdrift aktiv;Public;
+VS01.OPT.TK.AUT;R;260;Manuell Styrning;Public;Manuell_Styrning_AUT
+VS01.OPT.TK.CT13;R;284;Dagdrift Onsdag  2;Public;Tidkanal
+VS01.OPT.TK.CT11;R;282;Dagdrift Måndag  2;Public;Tidkanal
+VS01.OPT.TK.CF5;R;265;Dagdrift Fredag  1;Public;Tidkanal
+VS01.OPT.TK.CT4;R;278;Dagdrift Torsdag  1;Public;Tidkanal
+VS01.OPT.TK.CT1;R;275;Dagdrift Måndag  1;Public;Tidkanal
+VS01.OPT.TK.CF14;R;271;Dagdrift Torsdag  2;Public;Tidkanal
+VS01.EM10.PV6;R;212;Momentan effekt;Public;Effekt_kW
+VS01.EM10.PV7;R;213;Tilloppstemperatur;Public;VP_VS_temperatur
+VS01.EM10.PV8;R;214;Returtemperatur;Public;VP_VS_temperatur
+VS01.EM10.PV3;R;209;Energiförbrukning Föregående Dag;Public;Energi_kWh
+VS01.EM10.PV4;R;210;Energiförbrukning Föregående Vecka;Public;Energi_kWh
+VS01.EM10.PV5;R;211;Energiförbrukning Föregående Månad;Public;Energi_kWh
+VS01.EM10.PV2;R;208;Energiförbrukning Senaste Timmen;Public;Energi_kWh
+VS01.EM10.PV1;R;207;Energi aktuell mätarställning;Public;Energi_kWh
+VS01.EM10.PV1_INT;R;206;( Intern );Public;
+VS01.EM10.ARRAY_INT;R;202[4];( Intern );Public;
+VS01.GT40.PV;R;245;Returledningstemperatur;Public;VP_VS_temperatur
+VS01.GT40.FAULT;F;202;;Public;Larmgrupp_51
+VS01.A0009.GT40.PV;R;180;Rumstemperatur A0009;Public;Tilluftstemperatur
+VS01.A0009.GT40.FAULT;F;129;VS01-A0009-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0009.GT40.MCMD;F;130;Rum valt från HMI/ÖS;Public;
+VS01.A0009.GT40.DI_V;F;128;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0012.GT40.PV;R;181;Rumstemperatur A0012;Public;Tilluftstemperatur
+VS01.A0012.GT40.FAULT;F;132;VS01-A0012-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0012.GT40.MCMD;F;133;Rum valt från HMI/ÖS;Public;
+VS01.A0012.GT40.DI_V;F;131;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0026.GT40.PV;R;182;Rumstemperatur A0026;Public;Tilluftstemperatur
+VS01.A0026.GT40.FAULT;F;135;VS01-A0026-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0026.GT40.MCMD;F;136;Rum valt från HMI/ÖS;Public;
+VS01.A0026.GT40.DI_V;F;134;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0051.GT40.PV;R;183;Rumstemperatur A0051;Public;Tilluftstemperatur
+VS01.A0051.GT40.FAULT;F;138;VS01-A0051-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0051.GT40.MCMD;F;139;Rum valt från HMI/ÖS;Public;
+VS01.A0051.GT40.DI_V;F;137;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0055.GT40.PV;R;184;Rumstemperatur A0055;Public;Tilluftstemperatur
+VS01.A0055.GT40.FAULT;F;141;VS01-A0055-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0055.GT40.MCMD;F;142;Rum valt från HMI/ÖS;Public;
+VS01.A0055.GT40.DI_V;F;140;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0071.GT40.PV;R;186;Rumstemperatur A0071;Public;Tilluftstemperatur
+VS01.A0071.GT40.FAULT;F;147;VS01-A0071-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0071.GT40.MCMD;F;148;Rum valt från HMI/ÖS;Public;
+VS01.A0071.GT40.DI_V;F;146;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0066.GT40.PV;R;185;Rumstemperatur A0066;Public;Tilluftstemperatur
+VS01.A0066.GT40.FAULT;F;144;VS01-A0066-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0066.GT40.MCMD;F;145;Rum valt från HMI/ÖS;Public;
+VS01.A0066.GT40.DI_V;F;143;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A0106.GT40.PV;R;187;Rumstemperatur A0106;Public;Tilluftstemperatur
+VS01.A0106.GT40.FAULT;F;150;VS01-A0106-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A0106.GT40.MCMD;F;151;Rum valt från HMI/ÖS;Public;
+VS01.A0106.GT40.DI_V;F;149;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1002.GT40.PV;R;188;Rumstemperatur A1002;Public;Tilluftstemperatur
+VS01.A1002.GT40.FAULT;F;153;VS01-A1002-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1002.GT40.MCMD;F;154;Rum valt från HMI/ÖS;Public;
+VS01.A1002.GT40.DI_V;F;152;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1013.GT40.PV;R;189;Rumstemperatur A1013;Public;Tilluftstemperatur
+VS01.A1013.GT40.FAULT;F;156;VS01-A1013-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1013.GT40.MCMD;F;157;Rum valt från HMI/ÖS;Public;
+VS01.A1013.GT40.DI_V;F;155;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1044.GT40.PV;R;190;Rumstemperatur A1044;Public;Tilluftstemperatur
+VS01.A1044.GT40.FAULT;F;159;VS01-A1044-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1044.GT40.MCMD;F;160;Rum valt från HMI/ÖS;Public;
+VS01.A1044.GT40.DI_V;F;158;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1049.GT40.PV;R;191;Rumstemperatur A1049;Public;Tilluftstemperatur
+VS01.A1049.GT40.FAULT;F;162;VS01-A1049-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1049.GT40.MCMD;F;163;Rum valt från HMI/ÖS;Public;
+VS01.A1049.GT40.DI_V;F;161;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1068.GT40.PV;R;192;Rumstemperatur A1068;Public;Tilluftstemperatur
+VS01.A1068.GT40.FAULT;F;165;VS01-A1068-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1068.GT40.MCMD;F;166;Rum valt från HMI/ÖS;Public;
+VS01.A1068.GT40.DI_V;F;164;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1093.GT40.PV;R;193;Rumstemperatur A1093;Public;Tilluftstemperatur
+VS01.A1093.GT40.FAULT;F;168;VS01-A1093-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1093.GT40.MCMD;F;169;Rum valt från HMI/ÖS;Public;
+VS01.A1093.GT40.DI_V;F;167;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1105.GT40.PV;R;194;Rumstemperatur A1105;Public;Tilluftstemperatur
+VS01.A1105.GT40.FAULT;F;171;VS01-A1105-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1105.GT40.MCMD;F;172;Rum valt från HMI/ÖS;Public;
+VS01.A1105.GT40.DI_V;F;170;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1116.GT40.PV;R;195;Rumstemperatur A1116;Public;Tilluftstemperatur
+VS01.A1116.GT40.FAULT;F;174;VS01-A1116-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1116.GT40.MCMD;F;175;Rum valt från HMI/ÖS;Public;
+VS01.A1116.GT40.DI_V;F;173;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1122.GT40.PV;R;196;Rumstemperatur A1122;Public;Tilluftstemperatur
+VS01.A1122.GT40.FAULT;F;177;VS01-A1122-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1122.GT40.MCMD;F;178;Rum valt från HMI/ÖS;Public;
+VS01.A1122.GT40.DI_V;F;176;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A1141.GT40.PV;R;197;Rumstemperatur A1141;Public;Tilluftstemperatur
+VS01.A1141.GT40.FAULT;F;180;VS01-A1141-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A1141.GT40.MCMD;F;181;Rum valt från HMI/ÖS;Public;
+VS01.A1141.GT40.DI_V;F;179;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A2001.GT40.PV;R;198;Rumstemperatur A2001;Public;Tilluftstemperatur
+VS01.A2001.GT40.FAULT;F;183;VS01-A2001-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A2001.GT40.MCMD;F;184;Rum valt från HMI/ÖS;Public;
+VS01.A2001.GT40.DI_V;F;182;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A2004.GT40.PV;R;199;Rumstemperatur A2004;Public;Tilluftstemperatur
+VS01.A2004.GT40.FAULT;F;186;VS01-A2004-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A2004.GT40.MCMD;F;187;Rum valt från HMI/ÖS;Public;
+VS01.A2004.GT40.DI_V;F;185;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A2027.GT40.PV;R;200;Rumstemperatur A2027;Public;Tilluftstemperatur
+VS01.A2027.GT40.FAULT;F;189;VS01-A2027-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A2027.GT40.MCMD;F;190;Rum valt från HMI/ÖS;Public;
+VS01.A2027.GT40.DI_V;F;188;Rum inkluderat i medelvärdesberäkning;Public;
+VS01.A2058.GT40.PV;R;201;Rumstemperatur A2058;Public;Tilluftstemperatur
+VS01.A2058.GT40.FAULT;F;192;VS01-A2058-GT40 - Givarfel;Public;Givarfel_LF
+VS01.A2058.GT40.MCMD;F;193;Rum valt från HMI/ÖS;Public;
+VS01.A2058.GT40.DI_V;F;191;Rum inkluderat i medelvärdesberäkning;Public;
+VV01.GT11.PV;R;312;Framledningstemperatur;Public;VV_temperatur
+VV01.GT11.FAULT;F;220;VV01-GT11 - Givarfel;Public;Givarfel_LF
+VV01.GT11.SP;R;313;Börvärde;Public;VV_temperatur
+VV01.GT11.AD;R;308;Larmfördröjning;Public;Minuter
+VV01.GT11.D1;R;309;D-Tid;Public;I_Tid_D_Tid
+VV01.GT11.I1;R;310;I-Tid;Public;I_Tid_D_Tid
+VV01.GT11.AL;F;219;VV01-GT10 - Avvikelselarm;Public;Larmgrupp_41
+VV01.GT11.ADL;R;307;Larmavvikelsegräns;Public;VV_temperatur
+VV01.GT11.P1;R;311;P-Band;Public;P_Band_Temperatur
+VV01.GT40.PV;R;323;Returtemperatur;Public;VV_temperatur
+VV01.GT40.FAULT;F;222;VV01-GT40 - Givarfel;Public;Givarfel_LF
+VV01.GT40.ALL;R;321;Låglarmgräns;Public;VV_temperatur
+VV01.GT40.LAD;R;322;Larmfördröjning;Public;Minuter
+VV01.GT40.HAL;F;223;VV01-GT40 - Låglarm;Public;Larmgrupp_41
+VV01.SV20.OP;R;329;Utsignal Ventilställdon;Public;Utsignal_Analog
+VV01.SV20.AL2;F;233;VV01-SV20 - Utgång I Handläge;Public;Larmgrupp_51
+VV01.SV20.MS;F;234;Manuell Styrning;Public;
+VV01.SV20.OPM;R;328;Manuellt Värde;Public;Utsignal_Analog
+VV01.P1.CMD;F;226;Start/Stopp;Public;
+VV01.P1.MS;F;229;Manuell Styrning;Public;
+VV01.P1.AL2;F;224;VV01-P1 - Utgång I Handläge;Public;Larmgrupp_41
+VV01.P1.DI_V;F;227;Driftindikering;Public;
+VV01.P1.SB.DI;F;232;Indikering säkerhetsbrytare;Public;
+VV01.P1.SB.AD;R;327;Larmfördröjning;Public;Minuter
+VV01.P1.SB.AL;F;231;VV01-P1-SB Säkerhetsbrytare Fel Läge;Public;Larmgrupp_51
+VV01.P1.PV1;R;325;Drifttid;Public;Timmar
+VV01.P1.AL;F;225;VV01-P1 - Driftfel;Public;Larmgrupp_11
+VV01.P1.MCMD;F;228;Manuell Styrning;Public;
+VV01.P1.AD;R;324;Larmfördröjning;Public;Sekunder
+VV01.P1.RST;F;230;Återställning Drifttid;Public;
+VV01.P1.PV2;R;326;Antal Till/Frånslag;Public;Antal_OnOff
+VV01.GT12.PV;R;319;Framledningstemperatur;Public;VV_temperatur
+VV01.GT12.FAULT;F;221;VV01-GT12 - Givarfel;Public;Givarfel_LF
+VV01.GT12.SP;R;320;Börvärde;Public;VV_temperatur
+VV01.GT12.D1;R;315;D-Tid;Public;I_Tid_D_Tid
+VV01.GT12.I1;R;317;I-Tid;Public;I_Tid_D_Tid
+VV01.GT12.P1;R;318;P-Band;Public;P_Band_Temperatur
+VV01.GT12.AHL;R;314;Höglarmgräns;Public;VV_temperatur
+VV01.GT12.HAD;R;316;Larmfördröjning;Public;Minuter
+VV01.GT12.HAL;F;238;GT12 - Höglarm;Public;
+VV01.SV30.OP;R;331;Utsignal Ventilställdon;Public;Utsignal_Analog
+VV01.SV30.AL2;F;235;VV01-SV30 - Utgång I Handläge;Public;Larmgrupp_51
+VV01.SV30.MS;F;236;Manuell Styrning;Public;
+VV01.SV30.OPM;R;330;Manuellt Värde;Public;Utsignal_Analog
+VV01.VM21.PV2;R;338;Vattenförbrukning Föregående Timme;Public;Volym_m3
+VV01.VM21.PV3;R;339;Vattenförbrukning Föregående Dag;Public;Volym_m3
+VV01.VM21.PV4;R;340;Vattenförbrukning Föregående Vecka;Public;Volym_m3
+VV01.VM21.PV5;R;341;Vattenförbrukning Föregående Månad;Public;Volym_m3
+VV01.VM21.PV1;R;337;Vattenförbrukning Aktuellt Mätarställning;Public;Volym_m3
+VV01.VM21.PV1_INT;R;336;( Intern );Public;
+VV01.VM21.ARRAY_INT;R;332[4];( Intern );Public;
+VV01.VM22.PV2;R;348;Vattenförbrukning Föregående Timme;Public;Volym_m3
+VV01.VM22.PV3;R;349;Vattenförbrukning Föregående Dag;Public;Volym_m3
+VV01.VM22.PV4;R;350;Vattenförbrukning Föregående Vecka;Public;Volym_m3
+VV01.VM22.PV5;R;351;Vattenförbrukning Föregående Månad;Public;Volym_m3
+VV01.VM22.PV1;R;347;Vattenförbrukning Aktuellt Mätarställning;Public;Volym_m3
+VV01.VM22.PV1_INT;R;346;( Intern );Public;
+VV01.VM22.ARRAY_INT;R;342[4];( Intern );Public;
+VV01.VM23.PV2;R;358;Vattenförbrukning Föregående Timme;Public;Volym_m3
+VV01.VM23.PV3;R;359;Vattenförbrukning Föregående Dag;Public;Volym_m3
+VV01.VM23.PV4;R;360;Vattenförbrukning Föregående Vecka;Public;Volym_m3
+VV01.VM23.PV5;R;361;Vattenförbrukning Föregående Månad;Public;Volym_m3
+VV01.VM23.PV1;R;357;Vattenförbrukning Aktuellt Mätarställning;Public;Volym_m3
+VV01.VM23.PV1_INT;R;356;( Intern );Public;
+VV01.VM23.ARRAY_INT;R;352[4];( Intern );Public;
+AS01.INBROTT.DI_V;F;109;Inbrottslarm Pålarmat;Public;
+AS01.DDC.RESET.DI_V;F;105;Återställning AS Front;Public;
+AS01.DDC.MAN.RESET;F;104;Återställ Manuella Styrningar;Public;
+AS01.DDC.MAN.AL;F;103;AS06 - Manuell Styrning i DDC;Public;
+AS01.DDC.MAN.PV;R;107;Antal Fboxar i handläge;Public;Antal_OnOff
+AS01.DDC.MAN.AD;R;106;Larmfördröjning;Public;Sekunder
+AS01.DDC.KLOCKA.MCMD;F;102;Skriv Klocka till DDC;Public;
+AS01.DDC.KLOCKA.PV1;R;100;Tid - HHMMSS;Public;Tidkanal
+AS01.DDC.KLOCKA.PV2;R;101;Datum - YYMMDD;Public;Tidkanal
+AS01.DDC.KLOCKA.SP10;R;104;Ställ in Datum - YYMMDD;Public;Tidkanal
+AS01.DDC.KLOCKA.SP11;R;105;Ställ in Tid - HHMMSS;Public;Tidkanal
+AS01.DDC.KLOCKA.PV3;R;102;Vecka;Public;Tidkanal
+AS01.DDC.KLOCKA.PV4;R;103;Veckodag ( 1= Måndag .... 7 = Söndag );Public;Tidkanal
+AS01.DDC.FLEXTIME.AL;F;100;AS06 - Kommunikationsbortfall Flextime;Public;Larmgrupp_51
+AS01.DDC.FLEXTIME.DI_V;F;101;Watchdog Flextime;Public;
+AS01.WEBPORT.RESET;F;114;Reset Signal ( Tryckknapp eller DHC/Panel );Public;
+AS01.WEBPORT.DV;F;113;Watchdog WebPort;Public;
+AS01.WEBPORT.AL;F;112;AS06 - Kommunikationsbortfall till WebPort;Public;Larmgrupp_51
+AS01.TAG_IMPORT.HOLDER;R;112;;Public;S_WEB,S_HMI,S_IO,S_Bacnet,S_LON,S_Bus,S_Can,S_ProfibusDP,S_SIO,Antal_OnOff,Sekunder,Tidkanal,Utsignal_Analog,I_Tid_D_Tid,VP_VS_temperatur,Minuter,Utetemperatur,Tryck_Luft,Utekomp_Kurva_X,Flode_Luft,Tilluftstemperatur,P_Band_Temperatur,Frysvaktstemperatur,
+AS01.OSP1.AL;F;111;AS06 - Utlöst Överspänningsskydd;Public;Larmgrupp_51
+AS01.OSP1.AD;R;111;Larmfördröjning;Public;Minuter
+AS01.JFB.AL;F;110;AS06 - Utlöst Jordfelsbrytare;Public;Larmgrupp_51
+AS01.JFB.AD;R;110;Larmfördröjning;Public;Minuter
+AS01.FS.AL;F;108;AS06 - Utlöst Automatsäkring;Public;Larmgrupp_51
+AS01.FS.AD;R;109;Larmfördröjning;Public;Minuter
+AS01.ELINE.INIT.ENA;F;107;;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ScaleMax;R;[4];Maximum scale;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManMode;F;[4];State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManModeHw;F;[4];State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ScaleMin;R;[4];Minimum scale;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.EditManValue;R;[4];Edit the manual value;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ToggleManMode;F;[4];Enable/disable the manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.Value;R;[4];Output value;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput3.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManModeHw + 3);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput3.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManMode + 3);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput2.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 2);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput2.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 2);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput1.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManModeHw + 1);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput1.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManMode + 1);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput5.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 5);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput5.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 5);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput2.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManModeHw + 2);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.AnalogueOutput2.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.AnalogueOutput0.ManMode + 2);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput4.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 4);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput4.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 4);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw;F;[8];State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ToggleManMode;F;[8];Enable/disable the manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ToggleManValue;F;[8];Toggle the manual value;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.Value;F;[8];Output value;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode;F;[8];State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput7.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 7);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput7.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 7);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput3.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 3);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput3.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 3);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput1.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 1);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput1.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 1);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput6.ManMode;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManMode + 6);State of the software manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.DigitalOutput6.ManModeHw;F;(AS01.ELINE.JX1_G5000.Manual.DigitalOutput0.ManModeHw + 6);State of the hardware manual mode;Public;
+AS01.ELINE.JX1_G5000.Manual.LocalOverridePermission;R;;Manual override permission;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput5;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 5);Analog input 5;Public;
+AS01.ELINE.JX1_G5000.DigitalInput12;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 12);Digital input 12;Public;
+AS01.ELINE.JX1_G5000.Parameters.SR_WarnStatus;R;;Warning status;Public;
+AS01.ELINE.JX1_G5000.Parameters.SF_UploadBsy;F;;Upload config busy;Public;
+AS01.ELINE.JX1_G5000.Parameters.SF_DownloadBsy;F;;Dowload config busy;Public;
+AS01.ELINE.JX1_G5000.Parameters.SF_ButtonDownload;F;;Button: Download group;Public;
+AS01.ELINE.JX1_G5000.Parameters.SF_ButtonUpload;F;;Button: Upload;Public;
+AS01.ELINE.JX1_G5000.Parameters.SR_ExchangeDataModeMan;R;;Comm interval manual override;Public;
+AS01.ELINE.JX1_G5000.Parameters.SR_ExchangeDataModeIO;R;;Comm interval Inputs/outputs;Public;
+AS01.ELINE.JX1_G5000.Parameters.SR_Address;R;;S-Bus address;Public;
+AS01.ELINE.JX1_G5000.Parameters.SR_ErrStatus;R;;Error status;Public;
+AS01.ELINE.JX1_G5000.Parameters.SDB_ConfigIO;DB RAM;;Configurations IO  (not compressed);Public;
+AS01.ELINE.JX1_G5000.Parameters.SDB_ConfigIO[size];;-1;DB size;;
+AS01.ELINE.JX1_G5000.AnalogueOutput0;R;[4];Analog output  0;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput2;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 2);Analog input 2;Public;
+AS01.ELINE.JX1_G5000.DigitalInput3;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 3);Digital input 3;Public;
+AS01.ELINE.JX1_G5000.AnalogueOutput3;R;(AS01.ELINE.JX1_G5000.AnalogueOutput0 + 3);Analog output  3;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput6;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 6);Analog input 6;Public;
+AS01.ELINE.JX1_G5000.DigitalInput8;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 8);Digital input 8;Public;
+AS01.ELINE.JX1_G5000.DigitalInput6;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 6);Digital input 6;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput4;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 4);Relay output 4;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput1;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 1);Analog input 1;Public;
+AS01.ELINE.JX1_G5000.AnalogueOutput1;R;(AS01.ELINE.JX1_G5000.AnalogueOutput0 + 1);Analog output  1;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput6;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 6);Relay output 6;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput3;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 3);Relay output 3;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput7;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 7);Relay output 7;Public;
+AS01.ELINE.JX1_G5000.DigitalInput4;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 4);Digital input 4;Public;
+AS01.ELINE.JX1_G5000.AnalogueOutput2;R;(AS01.ELINE.JX1_G5000.AnalogueOutput0 + 2);Analog output  2;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput1;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 1);Relay output 1;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput2;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 2);Relay output 2;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput0;F;[8];Relay output 0;Public;
+AS01.ELINE.JX1_G5000.DigitalInput5;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 5);Digital input 5;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput3;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 3);Analog input 3;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput0;R;[10];Analog input 0;Public;
+AS01.ELINE.JX1_G5000.DigitalInput13;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 13);Digital input 13;Public;
+AS01.ELINE.JX1_G5000.DigitalInput10;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 10);Digital input 10;Public;
+AS01.ELINE.JX1_G5000.DigitalInput14;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 14);Digital input 14;Public;
+AS01.ELINE.JX1_G5000.DigitalOutput5;F;(AS01.ELINE.JX1_G5000.DigitalOutput0 + 5);Relay output 5;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput4;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 4);Analog input 4;Public;
+AS01.ELINE.JX1_G5000.DigitalInput15;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 15);Digital input 15;Public;
+AS01.ELINE.JX1_G5000.DigitalInput11;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 11);Digital input 11;Public;
+AS01.ELINE.JX1_G5000.DigitalInput2;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 2);Digital input 2;Public;
+AS01.ELINE.JX1_G5000.DigitalInput1;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 1);Digital input 1;Public;
+AS01.ELINE.JX1_G5000.DigitalInput0;F;[16];Digital input 0;Public;
+AS01.ELINE.JX1_G5000.DigitalInput9;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 9);Digital input 9;Public;
+AS01.ELINE.JX1_G5000.DigitalInput7;F;(AS01.ELINE.JX1_G5000.DigitalInput0 + 7);Digital input 7;Public;
+AS01.ELINE.JX1_G5000.AnalogueInput7;R;(AS01.ELINE.JX1_G5000.AnalogueInput0 + 7);Analog input 7;Public;
+AS01.EL.A1.OSP1.AL;F;106;AS06-ELC A1 - Utlöst Överspänningsskydd;Public;Larmgrupp_51
+AS01.EL.A1.OSP1.AD;R;108;Larmfördröjning;Public;Minuter
+AS01.KYL.AL;F;237;Summalarm Kyla B-Larm;Public;
+KV01.VM21.PV2;R;119;Vattenförbrukning Föregående Timme;Public;Volym_m3
+KV01.VM21.PV3;R;120;Vattenförbrukning Föregående Dag;Public;Volym_m3
+KV01.VM21.PV4;R;121;Vattenförbrukning Föregående Vecka;Public;Volym_m3
+KV01.VM21.PV5;R;122;Vattenförbrukning Föregående Månad;Public;Volym_m3
+KV01.VM21.PV1;R;118;Vattenförbrukning Aktuellt Mätarställning;Public;Volym_m3
+KV01.VM21.PV1_INT;R;117;( Intern );Public;
+KV01.VM21.ARRAY_INT;R;113[4];( Intern );Public;
+KV01.VM22.PV2;R;129;Vattenförbrukning Föregående Timme;Public;Volym_m3
+KV01.VM22.PV3;R;130;Vattenförbrukning Föregående Dag;Public;Volym_m3
+KV01.VM22.PV4;R;131;Vattenförbrukning Föregående Vecka;Public;Volym_m3
+KV01.VM22.PV5;R;132;Vattenförbrukning Föregående Månad;Public;Volym_m3
+KV01.VM22.PV1;R;128;Vattenförbrukning Aktuellt Mätarställning;Public;Volym_m3
+KV01.VM22.PV1_INT;R;127;( Intern );Public;
+KV01.VM22.ARRAY_INT;R;123[4];( Intern );Public;
+KV01.VM30.PV2;R;139;Vattenförbrukning Föregående Timme;Public;Volym_m3
+KV01.VM30.PV3;R;140;Vattenförbrukning Föregående Dag;Public;Volym_m3
+KV01.VM30.PV4;R;141;Vattenförbrukning Föregående Vecka;Public;Volym_m3
+KV01.VM30.PV5;R;142;Vattenförbrukning Föregående Månad;Public;Volym_m3
+KV01.VM30.PV1;R;138;Vattenförbrukning Aktuellt Mätarställning;Public;Volym_m3
+KV01.VM30.PV1_INT;R;137;( Intern );Public;
+KV01.VM30.ARRAY_INT;R;133[4];( Intern );Public;
+VP01.GT43.FAULT;F;126;VP01-GT43 - Givarfel;Public;Givarfel_LF
+VP01.GT43.PV;R;177;Returtemperatur;Public;VP_VS_temperatur
+VP01.GT44.FAULT;F;127;VP01-GT44 - Givarfel;Public;Givarfel_LF
+VP01.GT44.PV;R;178;Returtemperatur;Public;VP_VS_temperatur
+VP01.GT44.SP10;R;179;Kalibrering;Public;VP_VS_temperatur
+VP01.EM10.PV6;R;174;Momentan effekt;Public;Effekt_kW
+VP01.EM10.PV7;R;175;Tilloppstemperatur;Public;VP_VS_temperatur
+VP01.EM10.PV8;R;176;Returtemperatur;Public;VP_VS_temperatur
+VP01.EM10.PV3;R;171;Energiförbrukning Föregående Dag;Public;Energi_kWh
+VP01.EM10.PV4;R;172;Energiförbrukning Föregående Vecka;Public;Energi_kWh
+VP01.EM10.PV5;R;173;Energiförbrukning Föregående Månad;Public;Energi_kWh
+VP01.EM10.PV2;R;170;Energiförbrukning Senaste Timmen;Public;Energi_kWh
+VP01.EM10.PV1;R;169;Energi aktuell mätarställning;Public;Energi_kWh
+VP01.EM10.PV1_INT;R;168;( Intern );Public;
+VP01.EM10.ARRAY_INT;R;164[4];( Intern );Public;
+VAV1.GP60.PV;R;162;Tryck Expansionskärl;Public;Tryck_Exp
+VAV1.GP60.FAULT;F;117;VÅV1-GP60 - Givarfel;Public;Givarfel_LF
+VAV1.GP60.ALL;R;159;Larmgräns Lågt Tryck;Public;Tryck_Exp
+VAV1.GP60.ALLL;R;158;Larmgräns LågLågt Tryck;Public;Tryck_Exp
+VAV1.GP60.LAD;R;160;Larmfördröjning Låglarm;Public;Minuter
+VAV1.GP60.LLAD;R;161;Larmfördröjning LågLåglarm;Public;Minuter
+VAV1.GP60.LAL;F;118;;Public;Larmgrupp_41
+VAV1.GP60.LLAL;F;119;;Public;Larmgrupp_41
+VAV1.P1.DI_V;F;123;Driftindikering;Public;
+VAV1.P1.CMD;F;122;Manöver;Public;
+VAV1.P1.AL;F;121;VÅV1-P1 - Driftfel;Public;Larmgrupp_41
+VAV1.P1.AD;R;163;Larmfördröjning;Public;Sekunder
+VAV1.P1.MS;F;125;Manuell Styrning;Public;
+VAV1.P1.MCMD;F;124;Manuell Styrning;Public;
+VAV1.P1.AL4;F;120;VÅV1-P1 - Utgång I Handläge;Public;Larmgrupp_51
+VAV1.P1.PV1;R;730;Drifttid;Public;
+VAV1.P1.PV2;R;731;Antal starter;Public;
+VAV1.DI_V;F;116;Indikering från kylmaskiner;Public;
+VAV1.EM10.PV6;R;155;Momentan effekt;Public;Effekt_kW
+VAV1.EM10.PV7;R;156;Tilloppstemperatur;Public;VP_VS_temperatur
+VAV1.EM10.PV8;R;157;Returtemperatur;Public;VP_VS_temperatur
+VAV1.EM10.PV3;R;152;Energiförbrukning Föregående Dag;Public;Energi_kWh
+VAV1.EM10.PV4;R;153;Energiförbrukning Föregående Vecka;Public;Energi_kWh
+VAV1.EM10.PV5;R;154;Energiförbrukning Föregående Månad;Public;Energi_kWh
+VAV1.EM10.PV2;R;151;Energiförbrukning Senaste Timmen;Public;Energi_kWh
+VAV1.EM10.PV1;R;150;Energi aktuell mätarställning;Public;Energi_kWh
+VAV1.EM10.PV1_INT;R;149;( Intern );Public;
+VAV1.EM10.ARRAY_INT;R;145[4];( Intern );Public;
+VM23.PV1;R;;;Public;
+EL.EM1.PV1;R;362;Aktuell mätarställning;Public;Energi_kWh
+EL.EM1.PV2;R;363;Föregående timme;Public;Energi_kWh
+EL.EM1.PV3;R;364;Föregående dag;Public;Energi_kWh
+EL.EM1.PV4;R;365;Föregående vecka;Public;Energi_kWh
+EL.EM1.PV5;R;366;Föregående månad;Public;Energi_kWh
+EL.EM1.PV6;R;367;Effekt;Public;Effekt_kW
+EL.EM1.PV1_INT;R;368;( Intern );Public;
+EL.EM1.ARRAY_INT;R;369[4];( Intern );Public;
+EL.EM2.PV1;R;673;( Intern );Public;Energi_kWh
+EL.EM2.PV2;R;674;Föregående timme;Public;Energi_kWh
+EL.EM2.PV3;R;675;Föregående dag;Public;Energi_kWh
+EL.EM2.PV4;R;676;Föregående vecka;Public;Energi_kWh
+EL.EM2.PV5;R;677;Föregående månad;Public;Energi_kWh
+EL.EM2.PV6;R;678;Effekt;Public;Effekt_kW
+EL.EM2.PV1_INT;R;679;( Intern );Public;
+EL.EM2.ARRAY_INT;R;680[4];( Intern );Public;
+EL.EM3.PV1;R;684;Aktuell mätarställning;Public;Energi_kWh
+EL.EM3.PV2;R;685;Föregående timme;Public;Energi_kWh
+EL.EM3.PV3;R;686;Föregående dag;Public;Energi_kWh
+EL.EM3.PV4;R;687;Föregående vecka;Public;Energi_kWh
+EL.EM3.PV5;R;688;Föregående månad;Public;Energi_kWh
+EL.EM3.PV6;R;689;Effekt;Public;Effekt_kW
+EL.EM3.PV1_INT;R;690;( Intern );Public;
+EL.EM3.ARRAY_INT;R;691[4];( Intern );Public;
+EL.EM4.PV1;R;695;Aktuell mätarställning;Public;Energi_kWh
+EL.EM4.PV2;R;696;Föregående timme;Public;Energi_kWh
+EL.EM4.PV3;R;697;Föregående dag;Public;Energi_kWh
+EL.EM4.PV4;R;698;Föregående vecka;Public;Energi_kWh
+EL.EM4.PV5;R;699;Föregående månad;Public;Energi_kWh
+EL.EM4.PV6;R;700;Effekt;Public;Effekt_kW
+EL.EM4.PV1_INT;R;701;( Intern );Public;
+EL.EM4.ARRAY_INT;R;702[4];( Intern );Public;
+EL.EM5.PV1;R;706;Aktuell mätarställning;Public;Energi_kWh
+EL.EM5.PV2;R;707;Föregående timme;Public;Energi_kWh
+EL.EM5.PV3;R;708;Föregående dag;Public;Energi_kWh
+EL.EM5.PV4;R;709;Föregående vecka;Public;Energi_kWh
+EL.EM5.PV5;R;710;Föregående månad;Public;Energi_kWh
+EL.EM5.PV6;R;711;Effekt;Public;Effekt_kW
+EL.EM5.PV1_INT;R;712;;Public;
+EL.EM5.ARRAY_INT;R;713[4];;Public;
+EL.EM6.PV1;R;717;Aktuell mätarställning;Public;Energi_kWh
+EL.EM6.PV2;R;718;Föregående timme;Public;Energi_kWh
+EL.EM6.PV3;R;719;Föregående dag;Public;Energi_kWh
+EL.EM6.PV4;R;720;Föregående vecka;Public;Energi_kWh
+EL.EM6.PV5;R;721;Föregående månad;Public;Energi_kWh
+EL.EM6.PV6;R;722;Effekt;Public;Effekt_kW
+EL.EM6.PV1_INT;R;723;( Intern );Public;
+EL.EM6.ARRAY_INT;R;724[4];( Intern );Public;

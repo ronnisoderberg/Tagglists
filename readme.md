@@ -9,10 +9,10 @@ Målbilden ex
 - [ ] Lista all funktionalitet som ska finnas.
 
 
-## Detta gäller hämtning och hatering av data från saia DUC
-## Detta gäller hämtning och hatering av data från trend DUC
+## Saia DUC
+## Trend DUC
 ##### A Kolumen
-Är namnet på komponenten som kommer från "object-name" i EDE C8 och neråt
+Är namnet på komponenten som kommer från "object-name" i EDE C8 och neråt. Namnen ska inte ha mellanslag eller bindessträck i sig. Formatering ska göra för att hantera det. 
 
 ##### B Kolumen
 - EDE dokumentets object-type 0, returnerar detta "REAL".

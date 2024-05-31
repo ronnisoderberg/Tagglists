@@ -1,9 +1,9 @@
-const XLSX = require('xlsx');
-const fs = require('fs');
-const path = require('path');
+import XLSX from 'xlsx';
+import fs from 'fs';
+import path from 'path';
 
 // Function to convert .xls or .csv to .xlsx
-function convertToXlsx(inputFilename, outputFilename) {
+export default function convertToXlsx(inputFilename, outputFilename) {
     const ext = path.extname(inputFilename).toLowerCase();
     let workbook;
 
