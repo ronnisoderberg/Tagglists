@@ -8,15 +8,14 @@ import convertToXlsx from './convert.js';
 
 
 function xlsxManipulering(filename) {
-    // Read the .xlsx file
-    const workbook = XLSX.readFile(filename);
     
     const table = XLSX.readFile(filename);
     const sheet = table.Sheets[table.SheetNames[0]];
-    var range = XLSX.utils.decode_range(sheet['!ref']);
-    console.log(range.e.r);
+    const data = XLSX.utils.sheet_to_json(sheet, {header: 1});
 
-    
+
+
+
 
 }
 xlsxManipulering('L070n087_EDE.xlsx');
