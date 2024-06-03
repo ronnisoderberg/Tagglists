@@ -1,22 +1,27 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
+const path = require('path');
 
-// Function to convert .xls to .xlsx
-function convertXlsToXlsx(xlsFilename, xlsxFilename) {
-    // Read the .xls file
-    const xlsWorkbook = XLSX.readFile(xlsFilename, { type: 'binary' });
+// Function to convert .xls or .csv to .xlsx
+function convertToXlsx(inputFilename, outputFilename) {
+    const ext = path.extname(inputFilename).toLowerCase();
+    let workbook;
 
-    // Create a new .xlsx file
-    const xlsxWorkbook = XLSX.utils.book_new();
-
-    // Copy each sheet from the .xls file to the .xlsx file
-    xlsWorkbook.SheetNames.forEach(sheetName => {
-        const xlsSheet = xlsWorkbook.Sheets[sheetName];
-        XLSX.utils.book_append_sheet(xlsxWorkbook, xlsSheet, sheetName);
-    });
+    if (ext === '.xls') {
+        // Read the .xls file
+        workbook = XLSX.readFile(inputFilename, { type: 'binary' });
+    } else if (ext === '.csv') {
+        // Read the .csv file
+        const csvData = fs.readFileSync(inputFilename, 'utf-8');
+        const sheet = XLSX.utils.csv_to_sheet(csvData);
+        workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, sheet, 'Sheet1');
+    } else {
+        throw new Error('Unsupported file type');
+    }
 
     // Write the .xlsx file
-    XLSX.writeFile(xlsxWorkbook, xlsxFilename);
+    XLSX.writeFile(workbook, outputFilename);
 }
 
 // Function to read .xlsx file
@@ -34,8 +39,11 @@ function readXlsx(filename) {
 }
 
 // Convert the first .xls file
-convertXlsToXlsx('L070n087_SET_Export.xls', 'L070n087_SET_Export.xlsx');
+convertToXlsx('L070n087_SET_Export.xls', 'L070n087_SET_Export.xlsx');
+
+// Convert a CSV file
+// convertToXlsx('example.csv', 'example.xlsx');
 
 // Read the converted .xlsx files
 readXlsx('L070n087_SET_Export.xlsx');
-readXlsx('L070n087_EDE.xlsx');
+// readXlsx('L070n087_EDE.xlsx');
