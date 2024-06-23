@@ -20,8 +20,8 @@ function xlsxManipulering(edeFile, exportFile) {
     const sensors_sheet = exportFile_workBook.Sheets[exportFile_workBook.SheetNames[0]];
     const knobs_sheet = exportFile_workBook.Sheets[exportFile_workBook.SheetNames[1]];
     
-
-
+    
+    
     const edeData = XLSX.utils.sheet_to_json(sheet, {header: 1});
     const sensorsData = XLSX.utils.sheet_to_json(sensors_sheet, {header: 1});
     const knobsData = XLSX.utils.sheet_to_json(knobs_sheet, {header: 1});
@@ -72,22 +72,33 @@ function xlsxManipulering(edeFile, exportFile) {
 
         //D - Kolumnen
         //Sätter rätt förkortning på taggen. Sensors/S, Digins/I, Knobs/K, Switchar/W, samt vilket nummer den ska ha baserat på vad "object-instanse" är
-        if (edeData[i][3] === 0) { dKolum.push("S" + edeData[i][4] + "/V")}
-        if (edeData[i][3] === 3) { dKolum.push("I" + edeData[i][4] + "/S")}
-        if (edeData[i][3] === 2) { dKolum.push("K" + edeData[i][4] + "/V")}
-        if (edeData[i][3] === 5) { dKolum.push("W" + edeData[i][4] + "/S")}
+
+        if (edeData[i][3] === 0) { 
+            dKolum.push("S" + edeData[i][4] + "/V");
+        } else if (edeData[i][3] === 3) { 
+            dKolum.push("I" + edeData[i][4] + "/S");
+        } else if (edeData[i][3] === 2) { 
+            dKolum.push("K" + edeData[i][4] + "/V");
+        } else if (edeData[i][3] === 5) { 
+            dKolum.push("W" + edeData[i][4] + "/S");
+        } else {
+            dKolum.push("");
+        }
 
         //E - Kolumnen
         //Nu ska en hämtning från "LxxnxxSET_Export.xls" göras
         //Gör en jävla refactorering, detta går på tok för långsamt.
         //Samlar ihop alla enheter för sensorer och knobs, så att man kan få värdena som ska visasa, samt rawmin/rawmax.
         // Sätter inte värdet till E-kolumenn här. 
-    
-        for (let j = 0; j < sensorsData.length; j++) {
-            if (edeData[i][2] === sensorsData[j][2]){
-                
+        
 
-                if (sensorsData[j][3] === 0) {
+        debugger
+        if (dKolum[i-7].charAt(0) === "S" ||  dKolum[i-7].charAt(0) === "K") {
+
+
+
+            for (let j = 0; j < sensorsData.length; j++) {
+                if (sensorsData[j][3] === 0)  {
                     eKolum.push("0");
                 } else if (sensorsData[j][3] === "x") {
                     eKolum.push("-500");
@@ -102,29 +113,24 @@ function xlsxManipulering(edeFile, exportFile) {
                 } else if (sensorsData[j][3] === "bar") {
                     eKolum.push("0");
                 } else {
-                    eKolum.push("sdsd");
+                    eKolum.push("not in list");
                 }
-        }
-    }
-
-        for (let j = 0; j < knobsData.length; j++) {
-            if (edeData[i][2] === knobsData[j][2]){
-                knobsUnits.push(knobsData[j][3]);
             }
+            
         }
-        
-        
-        
-        
+        else eKolum.push("");
+            // for (let j = 0; j < knobsData.length; j++) {
+        //     if (edeData[i][2] === knobsData[j][2]){
+        //         knobsUnits.push(knobsData[j][3]);
+        //     }
+        // }
+        // console.log(typeof edeData[i][3]);
     }
-
-
-    
-
-    
     for (let i =0; i < bKolum.length; i++) {
         console.log("RAD NR ", i+8 +" --- "+ aKolum[i] + ", " + bKolum[i] + ", " + cKolum[i] + ", " + dKolum[i] + ", " + eKolum[i]);
     }
+    console.log("Sensors: ", sensorsData.length);
+    console.log(edeData.length);
     
 
 }
