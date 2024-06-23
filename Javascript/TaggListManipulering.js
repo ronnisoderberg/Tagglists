@@ -96,8 +96,8 @@ function xlsxManipulering(edeFile, exportFile) {
         if (dKolum[i-7].charAt(0) === "S" ||  dKolum[i-7].charAt(0) === "K") {
 
 
-
-            for (let j = 0; j < sensorsData.length; j++) {
+            
+            for(let j = i-7; j < i-6; j++) {
                 if (sensorsData[j][3] === 0)  {
                     eKolum.push("0");
                 } else if (sensorsData[j][3] === "x") {
