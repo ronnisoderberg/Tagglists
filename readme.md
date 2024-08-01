@@ -1,8 +1,9 @@
 ### Vad händer i alla kolumnerna?
 
 Målbilden ex
-| AS202_142_GTU_PV  | REAL |  003_AS202-122_DUC88_| S2(V) |  -40 |  110 |  -40 | 110  |  °C | ###.#EU  |  Utetemperatur |
+| A | B |  C | D | E | F | G | H  |  I | J |  K |
 |---|---|---|---|---|---|---|---|---|---|---|
+| AS202_142_GTU_PV  | REAL |  003_AS202-122_DUC88_| S2(V) |  -40 |  110 |  -40 | 110  |  °C | ###.#EU  |  Utetemperatur |
 
 
 - [ ] Skriv ut vad alla kolumnerna är och vad dom tar sin data ifrån. 
