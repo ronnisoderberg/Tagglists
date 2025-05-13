@@ -92,33 +92,34 @@ function xlsxManipulering(edeFile, exportFile) {
         // Sätter inte värdet till E-kolumenn här. 
         
 
-        if (dKolum[i-7].charAt(0) === "S" ||  dKolum[i-7].charAt(0) === "K") {
+         if (dKolum[i - 7] && (dKolum[i - 7].charAt(0) === "S" || dKolum[i - 7].charAt(0) === "K")) {
 
+            const zeroSet = new Set(["min", "sec", "h", "kPa", "Pa", "sek", "MWh", "kW", "K", "s", "ppm", "A", "V", "kWh", "W", "dagar", "Nm", "bar"]);
+            const minus500Set = new Set(["x"]);
+            const minus40Set = new Set(["°C"]);
+            const minus10Set = new Set(["%", "%RH"]);
+            const minus10000Set = new Set(["l/s", "m³/h", "l/h", "g/kg", "m³ h", "m³", "m³/s", "rpm", "Hz"]);
 
-            debugger
-            console.log("Sensors: ", sensorsData[i][3]);
-            console.log("row number", i);
-                // console.log("Sensors: ", sensorsData[j][3]);
+            if (sensorsData[i] && sensorsData[i][3] !== undefined && sensorsData[i][3] !== null) {
+                const value = sensorsData[i][3];
 
-                if (sensorsData[i][3] === 0)  {
+                if (value === 0 || zeroSet.has(value)) {
                     eKolum.push("0");
-                } else if (sensorsData[i][3] === "x") {
+                } else if (minus500Set.has(value)) {
                     eKolum.push("-500");
-                } else if (sensorsData[i][3] === "min" || sensorsData[i][3] === "sec" || sensorsData[i][3] === "h" || sensorsData[i][3] === "kPa" || sensorsData[i][3] === "Pa" || sensorsData[i][3] === "sek" || sensorsData[i][3] === "MWh" || sensorsData[i][3] === "kW" || sensorsData[i][3] === "K" || sensorsData[i][3] === "s" || sensorsData[i][3] === "ppm" || sensorsData[i][3] === "A" || sensorsData[i][3] === "V" || sensorsData[i][3] === "kWh" || sensorsData[i][3] === "W" || sensorsData[i][3] === "dagar" || sensorsData[i][3] === "Nm") {
-                    eKolum.push("0");
-                } else if (sensorsData[i][3] === "°C") {
+                } else if (minus40Set.has(value)) {
                     eKolum.push("-40");
-                } else if (sensorsData[i][3] === "%" || sensorsData[i][3] === "%RH") {
+                } else if (minus10Set.has(value)) {
                     eKolum.push("-10");
-                } else if (sensorsData[i][3] === "l/s" || sensorsData[i][3] === "m³/h" || sensorsData[i][3] === "l/h" || sensorsData[i][3] === "g/kg" || sensorsData[i][3] === "m³ h" || sensorsData[i][3] === "m³" || sensorsData[i][3] === "m³/s" || sensorsData[i][3] === "rpm" || sensorsData[i][3] === "Hz") {
+                } else if (minus10000Set.has(value)) {
                     eKolum.push("-10000");
-                } else if (sensorsData[i][3] === "bar") {
-                    eKolum.push("0");
                 }
-                
-            
+            } else {
+                eKolum.push("");
+            }
+        } else {
+            eKolum.push("");
         }
-        else eKolum.push("");
         
             // for (let j = 0; j < knobsData.length; j++) {
         //     if (edeData[i][2] === knobsData[j][2]){
@@ -128,7 +129,7 @@ function xlsxManipulering(edeFile, exportFile) {
         // console.log(typeof edeData[i][3]);
     }
     for (let i =0; i < bKolum.length; i++) {
-        console.log("RAD NR ", i+8 +" --- "+ aKolum[i] + ", " + bKolum[i] + ", " + cKolum[i] + ", " + dKolum[i] + ", " + eKolum[i]);
+        // console.log("RAD NR ", i+8 +" --- "+ aKolum[i] + ", " + bKolum[i] + ", " + cKolum[i] + ", " + dKolum[i] + ", " + eKolum[i]);
     }
     // console.log("Sensors: ", sensorsData.length);
     // console.log(edeData.length);
